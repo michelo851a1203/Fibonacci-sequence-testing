@@ -1,7 +1,7 @@
-import { bench, describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 import { factorial, fib, currySum } from '.'
 
-describe.skip('factorial', () => {
+describe('factorial', () => {
   test('0', () => {
     expect(factorial(0)).toBe(1);
   });
@@ -23,7 +23,7 @@ describe.skip('factorial', () => {
   });
 })
 
-describe.skip('fibinacci', () => {
+describe('fibinacci', () => {
   test('0', () => {
     expect(fib(0)).toBe(1);
   });
@@ -57,7 +57,7 @@ describe.skip('fibinacci', () => {
   });
 })
 
-describe.skip('sum', () => {
+describe('sum', () => {
   test('single value', () => {
     expect(currySum(10)()).toBe(10);
   });
